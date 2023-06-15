@@ -89,7 +89,7 @@ async function searchPhones(name){
         "Content-type": "application/json; charset=UTF-8"
         },
         method:"post",
-        // body:JSON.stringify({name}) 
+        body:JSON.stringify({name}) 
         
     })
     .then((data) => data.json())
@@ -102,7 +102,7 @@ async function searchPhones(name){
 window.addEventListener('load',function(e){
     getProduct()
     head()
-    searchPhones("vivo")
+    // searchPhones("huhu")
     const products=[];
     const wrapperDetail = $(".wrapper-products");
         wrapperDetail.onclick= function(e){

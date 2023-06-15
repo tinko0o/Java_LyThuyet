@@ -168,6 +168,21 @@ body {
   font-weight: 700;
   padding: 10px 5px;
   border-radius: 5px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-form .container .form-bx .form form button.login-google {
+  max-width: 300px;
+}
+.wrapper-form .container .form-bx .form form button p {
+  margin: 0;
+}
+.wrapper-form .container .form-bx .form form button img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
 }
 .wrapper-form .container .form-bx .form form .forgot {
   margin-top: 15px;

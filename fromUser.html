@@ -19,12 +19,7 @@
 
 <body>
 
-  <div class="alert alert-danger" role="alert">
-    <span>Something was wrong</span> <i class="fa-solid fa-exclamation"></i>
-  </div>
-  <div class="alert alert-primary" role="alert">
-    <span>A simple danger alert with</span> <i class="fa-solid fa-check"></i>
-  </div>
+
   <div class="wrapper-form">
     <div class="container">
       <div class="wrapper-BG">
@@ -46,15 +41,18 @@
 
             <input type="email" required name="email" placeholder="Email">
             <input required type="password" name="password" placeholder="Password">
+            <button class="login-google">
+              <p>Login with google</p> <img src="./img/Google__G__Logo.svg.png" alt="">
+            </button>
             <button type="submit" class="submit-signin">Login</button>
-            <a href="" class="forgot">Fogot Password</a>
+            <a href="./changePass.html" class="forgot">Fogot Password</a>
           </form>
 
         </div>
         <div class="form form-signup">
           <form class="get-signup" action="">
             <div class="content">
-              <h3>Sign Un</h3>
+              <h3>Sign Up</h3>
             </div>
             <input required type="text" name="username" placeholder="Username">
             <input required type="email" name="email" placeholder="Email">
@@ -69,6 +67,8 @@
     </div>
   </div>
 </body>
-<script src="./dist/js/user.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="./dist/js/user.js"></script>
 
 </html>

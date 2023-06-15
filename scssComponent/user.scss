@@ -122,6 +122,21 @@ body {
             font-weight: 700;
             padding: 10px 5px;
             border-radius: 5px;
+            white-space: nowrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.login-google {
+              max-width: 300px;
+            }
+            p {
+              margin: 0;
+            }
+            img {
+              width: 30px;
+              height: 30px;
+              margin-left: 10px;
+            }
           }
           .forgot {
             margin-top: 15px;
