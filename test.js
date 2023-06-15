@@ -126,3 +126,25 @@ fileInput.addEventListener("change", function (event) {
     }
   );
 });
+
+const formTranslate = document.querySelector(".translate");
+formTranslate.addEventListener("submit",async function(e){
+  e.preventDefault();
+  const value = this.elements["value"].value;
+  translate(value);
+})
+
+
+async function translate(value){
+  await fetch(`https://api.tracau.vn/WBBcwnwQpV89/s/${value}/en`)
+  .then((response) => response.json())
+  .then((data) => {
+    console.log("data:", data);
+    // Handle the response data here
+  })
+  .catch((error) => {
+    console.log("error:", error);
+    // Handle any errors that occur during the request
+  });
+
+}

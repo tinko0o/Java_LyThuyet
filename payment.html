@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./scssComponent/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dist/css/payment.css">   
+    <title>Payment</title>
+</head>
+<body>
+    <div class="alert alert-danger" role="alert">
+        <span>Something was wrong</span> <i class="fa-solid fa-exclamation"></i>
+    </div>
+    <div class="alert alert-primary" role="alert">
+        <span>A simple danger alert with</span> <i class="fa-solid fa-check"></i>
+    </div>
+<header>
+    <!-- <div class="container"> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+            <!-- <div class="user"></div> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+    </div>
+</header>
+    <div class="checkout" style="margin-top: 30px;">
+        <div class="container">
+            <form action="#" class="f-checkout row">
+                <div class="col col-lg-6 user-checkout">
+                    <h2>Thông tin của bạn</h2>
+                    <div class="input-group">
+                        <label for="u-name">Họ tên</label>
+                        <input id="u-name" required name="name" type="text">
+                    </div>
+                    <!-- <div class="input-group">
+                        <label for="u-email">Email</label>
+                        <input id="u-email" required name="email" type="text">
+                    </div> -->
+                    <div class="input-group">
+                        <label for="u-phone">Số điện thoại</label>
+                        <input id="u-phone" required name="phone" type="text">
+                    </div>
+                    <div class="input-group">
+                        <label for="u-address">Địa chỉ</label>
+                        <input id="u-address" required name="address" type="text">
+                    </div>
+                    <hr>
+                    <div class="sub-total">
+                        <div class="total">
+                            <h3>Tổng tiền:</h3>
+                            <div class="subtotal-detail">10000000d</div>
+                        </div>
+                        <button class="btn-submit" type="submit">Phương thức COD</button>
+                        <!-- <button class=" btn-MOMO-submit ">Thanh toán với MOMO</button> -->
+                        
+                    </div>
+                </div>
+                <div class="col col-lg-6 product-checkout">
+                    <h2>Đơn hàng của bạn</h2>
+                    <div class="title-product">
+                        <p>Sản phẩm</p>
+                        <p>Tổng tiền</p>
+                    </div>
+                    <div class="products">
+                        <!-- <div class="product">
+                            <img src="./img/sp1.jpg" alt="">
+                            <div class="p-name">
+                                <h4 class="name-product">this is name product</h4>
+                                <span class="quantity">X2</span>
+                            </div>
+                            <p class="p-total">10000d</p>
+                        </div>
+                        <div class="product">
+                            <img src="./img/sp1.jpg" alt="">
+                            <div class="p-name">
+                                <h4 class="name-product">this is name product</h4>
+                                <span class="quantity">X2</span>
+                            </div>
+                            <p class="p-total">10000d</p>
+                        </div>
+                        <div class="product">
+                            <img src="./img/sp1.jpg" alt="">
+                            <div class="p-name">
+                                <h4 class="name-product">this is name product</h4>
+                                <span class="quantity">X2</span>
+                            </div>
+                            <p class="p-total">10000d</p>
+                        </div>
+                        <div class="product">
+                            <img src="./img/sp1.jpg" alt="">
+                            <div class="p-name">
+                                <h4 class="name-product">this is name product</h4>
+                                <span class="quantity">X2</span>
+                            </div>
+                            <p class="p-total">10000d</p>
+                        </div> -->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./dist/js/payment.js" type="module"></script>
+</html>
