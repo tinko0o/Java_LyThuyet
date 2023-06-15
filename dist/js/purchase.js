@@ -82,10 +82,10 @@ function renderPuchase(data) {
 
 }
 async function cancelOder(id) {
-  await fetch(`${http}oders/cancel/${id}`, {
+  await fetch(`${http}purchases/${id}/cancel/`, {
     headers: {
       "Content-type": "application/json; charset=UTF-8",
-      authentication: User?.token,
+      Authorization: User?.token,
     },
     method: "put",
   })
@@ -109,6 +109,6 @@ purchased.addEventListener('click', function (e) {
     if (btnCancel) {
       const id = btnCancel.dataset.id;
       console.log(id)
-      // cancelOder(id)
+      cancelOder(id)
     }
 })
